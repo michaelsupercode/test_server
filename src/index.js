@@ -21,7 +21,7 @@ app.use(morgan("dev"))
 app.use(express.json())
 
 app.get("/", ( _, res) => {
-    res.send("server runs :)")
+    res.send("server is running :)")
 })
 
 app.get("/api/products/all", async function getAllProductsController(_, res) {
